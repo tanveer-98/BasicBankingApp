@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import django_heroku
 import dj_database_url
 from pathlib import Path
-
+from decouple import config
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +29,7 @@ SECRET_KEY = '91d-(jlwo1#(x*-1(fc(eahn26@_b91@1x)ws(u+l0i%l3x)g*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'git.heroku.com/app-basicbankingsystem.git']
+ALLOWED_HOSTS = []
 
 
 # Application definition
