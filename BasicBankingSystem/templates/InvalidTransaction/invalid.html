@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Transfer Fund Page</title>
+    <title>ERROR</title>
   </head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -39,17 +39,9 @@
 
     </div>
   </nav>
-  <div class="container container-details effect7">
-    <h1 class="display-2"> This is The Transfer Form Page</h1>
-    <p class = 'lead'>Sender Balance: {{person1.current_balance}}</p>
-    <p class = 'lead'>Receiver Balance: {{person2.current_balance}}</p>
-    <form  action="{%url 'transfer' person1.id person2.id %}" method="post">
-        {%csrf_token%}
-        <label for="amount">Enter Amount To Transfer </label>
-        <input type="text" name="amount">
-        <input class='btn btn-primary color-yellow' type="submit" name="trasfer" value="Transfer">
+    <div class="container container-details center">
+      <p class='lead'>Insufficient Balance to Transfer Fund</p>
 
-    </form>
-  </div>
+    </div>
   </body>
 </html>

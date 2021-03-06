@@ -61,28 +61,22 @@
       </table>
    </div>
 
-     {%for customer in allCust%}
+
 
      <div class="container container-details effect7 center">
-       <div class="container pad effect7">
-         <table>
-           <thead>
-             <th >Customer Name</th>
-               <th>Customer Balance</th>
-                 <th>Customer Email</th>
-           </thead>
+       {%for customer in allCust%}
+        <div class="container pad effect7">
+          <table>
            <tr>
-               <td>{{customer.name}}</td>
-                 <td>{{customer.current_balance}}</td>
-                   <td>{{customer.email}}</td>
+               <td> SEND TO: {{customer.name}} : </td>
+               <td><a class="btn btn-primary color-yellow" href="{%url 'transfer' CurrCust.id customer.id %}">Transfer Fund</a> </td>
            </tr>
          </table>
-             <a class="btn btn-primary color-yellow" href="{%url 'transfer' CurrCust.id customer.id %}">Transfer Fund</a>
-
        </div>
+        {%endfor%}
        </div>
 
-     {%endfor%}
+
 
 
   </body>
