@@ -25,7 +25,4 @@ import app1
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('app1.urls')),
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
-
-
 ]
