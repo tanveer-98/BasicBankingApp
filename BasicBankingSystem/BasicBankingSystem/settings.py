@@ -29,7 +29,7 @@ SECRET_KEY = '91d-(jlwo1#(x*-1(fc(eahn26@_b91@1x)ws(u+l0i%l3x)g*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'app-basicbanking.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'git.heroku.com/app-basicbankingsystem.git']
 
 
 # Application definition
