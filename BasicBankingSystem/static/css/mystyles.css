@@ -1,0 +1,42 @@
+body{
+  margin:0px;
+  background-image: url('/static/images/bg1.jpg');
+  background-size:cover;
+  font-family: 'Noto Serif JP', serif;
+
+}
+.center{
+  text-align:center;
+}
+
+.container-details{
+ padding:10px;
+ border:1px solid black;
+ border-radius: 5px;
+ background-color:lightgray;
+ margin-top:10px;
+ margin-bottom:10px;
+
+
+}
+
+
+.font{
+  font-family: 'Noto Serif JP', serif;
+}
+
+.container-home{
+  margin-top: 200px;
+}
+th,td{
+
+  border:1px solid black;
+}
+table{
+ position: relative;
+ left:400px;
+}
+.pad{
+  margin-top:20px;
+  margin-bottom:20px;
+}

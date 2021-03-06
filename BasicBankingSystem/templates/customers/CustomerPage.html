@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CUSTOMER PAGE</title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{%static 'css/mystyles.css'%}">
+  <link rel="stylesheet" href="{%static 'css/shadows.css'%}">
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" <a  href="{%url 'home'%}">DJANGO</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav">
+
+       <li class="nav-item">
+         <a class="nav-link" href="{% url 'admin:index'%}">ADMIN</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="{% url 'home' %}">Home</a>
+       </li>
+     </ul>
+
+
+   </div>
+ </nav>
+ <div class="container center">
+     <h1 class="font">List Of All Customers</h1>
+ </div>
+
+   {%for c in cust%}
+<div class="container container-details effect7 center">
+  <p class="font">customer name: <span>{{c.name}}</span></p>
+  <a class='btn btn-primary color-yellow font' href="{%url 'cdetails' c.id %}">View customer</a>
+
+</div>
+
+   {%endfor%}
+
+  </body>
+</html>
