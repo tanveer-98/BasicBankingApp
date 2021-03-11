@@ -1,13 +1,13 @@
 /* inner box shadow */
 .shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+   -moz-box-shadow:     0 0 40px rgba(0, 0, 0, 0.3) inset;
+   -webkit-box-shadow:  0 0 40px rgba(0, 0, 0, 0.3) inset;
+   box-shadow:          0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 /* outer shadow */
 .effect7
 {
-    position:relative;
+
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;

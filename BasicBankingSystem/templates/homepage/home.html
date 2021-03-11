@@ -19,12 +19,16 @@
   <!-- for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
   <link rel="stylesheet" href="{%static 'css/mystyles.css'%}">
   <link rel="stylesheet" href="{%static 'css/shadows.css'%}">
+  <!-- for fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Permanent+Marker&display=swap" rel="stylesheet"
   <body>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" <a  href="https://www.thesparksfoundationsingapore.org/">SPARK</a>
+     <nav class="navbar navbar-expand-lg effect7 font-orbitron" >
+    <a class="navbar-brand" href="https://www.thesparksfoundationsingapore.org/" style="color:white;"> <b>SPARK</b> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,26 +37,35 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'customers' %}">CUSTOMERS</a>
+          <a class="nav-link" style="color:white;" href="{% url 'customers' %}">  CUSTOMERS</a>
         </li>
       </ul>
     </div>
   </nav>
 
 
-<div id="holder" style="padding-top:200px;">
-    <div  id="body" >
-      <div class="container center"  >
-        <h1 class='display-2'>Welcome to the HomePage</h1>
-        <h1 class="display-4">Go to the customers page for different services</h1>
+<div id="holder" >
+    <div  id="body" class="font-orbitron" >
+      <div class="container-fluid padding  white  text-center">
+        <div class="welcome text-center ">
+          <h1 class="display-4">Built with Django</h1>
+          <hr>
+        </div>
+
+        <div class=" welcome col-12">
+          <p class="lead">This is a basic prototype of  a Banking System built with HTML,CSS,BOOSTRAP-4 and Django.
+          <br> Proceed To The Customer Section To Get Started.</p>
+        </div>
+
       </div>
+
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer shadow">
         <div class="container">
             <div class="row">
                <div class="col-md-8 col-sm-6 col-xs-12"  style="padding-top:5px;">
-                 <p style="font-size:18px;">Project made by <a href="https://www.linkedin.com/in/tanveer-ahmed-589055112/">Tanveer Ahmed</a> for GRIPMarch21.</p>
+                 <p style="font-size:20px;">Project made by <a style="color:white;" href="https://www.linkedin.com/in/tanveer-ahmed-589055112/"> <u> Tanveer Ahmed </u></a> for GRIPMarch21.</p>
                </div>
                <div class="col-md-4 col-sm-6 col-xs-12" style="padding-top:5px;">
                  <ul class="social-icons">
