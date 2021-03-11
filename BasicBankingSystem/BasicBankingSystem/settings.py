@@ -129,3 +129,9 @@ STATIC_DIR
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS ={
+messages.ERROR:'danger'
+}
