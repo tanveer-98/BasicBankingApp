@@ -6,40 +6,28 @@
     <title>CUSTOMER PAGE</title>
   </head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <!-- Popper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
-
   <!-- for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="{%static 'css/mystyles.css'%}">
   <link rel="stylesheet" href="{%static 'css/shadows.css'%}">
-
   <!-- for fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Permanent+Marker&display=swap" rel="stylesheet"
-
-  <body>
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+ <body>
       <div id="holder" >
         <nav class="navbar navbar-dark  navbar-expand-lg effect7 font-orbitron">
        <a class="navbar-brand" <a  href="https://www.thesparksfoundationsingapore.org/" style="color:white;">SPARK</a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
          <span class="navbar-toggler-icon"></span>
        </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav ">
             <li class="nav-item">
@@ -49,22 +37,15 @@
         </div>
         </nav>
         <div  id="body"  class=" container font-orbitron" >
-
           <div class="container center">
             <h1 >List Of All Customers</h1>
           </div>
-
           {%for c in cust%}
           <div class="container container-details effect7 center" >
           <p >Customer Name : <span>{{c.name}}</span></p>
           <a class='button button1 effect7' href="{%url 'cdetails' c.id %}">View customer</a>
-
           </div>
-
           {%endfor%}
-
-
-
         </div>
         <footer class="site-footer shadow" >
              <div class="container">
@@ -83,7 +64,5 @@
              </div>
         </footer>
       </div>
-
-
   </body>
 </html>
